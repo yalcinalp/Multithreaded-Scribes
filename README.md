@@ -10,3 +10,5 @@ The task involves simulating multiple scribes (represented as threads) performin
 - **Concurrency Control**: Scribes must synchronize access to shared resources (pen and ink bottle) to avoid conflicts.
 - **Deadlock Prevention**: The system handles situations to ensure scribes can continue working without getting stuck waiting for resources.
 - **Action Coordination**: Actions such as picking up a pen, taking an ink bottle, writing a record, and returning resources are managed to avoid unnecessary delays and ensure fairness.
+
+Project uses \textbf{semaphores} to control access to the shared resources
