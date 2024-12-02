@@ -13,8 +13,8 @@ public class Scribes {
         int nPens = Integer.parseInt(args[1]);
         int nBottles = Integer.parseInt(args[2]);
 
-        pens = new Semaphore(nPens);
-        ink_bottles = new Semaphore(nBottles);
+        pens = new Semaphore(nPens, true);
+        ink_bottles = new Semaphore(nBottles, true);
 
         ExecutorService executor = Executors.newFixedThreadPool(nScribes);
         for (int i = 1; i <= nScribes; i++) {
